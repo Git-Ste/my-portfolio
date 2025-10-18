@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e3e2e2;
+}
+
+.page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-container{
+    height: 70%;
+    min-height: 450px;
+    width: 80%;
+    min-width: 250px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.content-container, .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title{
+    color: #131313;
+}
+
+.form-container p{
+    font-size: 16px;
+    color: #131313;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.form-container .label{
+    font-size: 14px;
+    color: #303030;
+}
+
+.form-container .form-input{
+    width: 100%;
+    margin: auto;
+    background-color: #c9ccee;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-container .form-input:focus{
+    border: 1px solid  #5056bf;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 60%;
+    min-width: 150px;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #5056bf99;
+}
+
+.information-container{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .information-container{
+        display: block;
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-container{
+        width: 55%;
+        margin: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .information-container{
+        width: 40%;
+    }
+}
+
+.information-container h6{
+    font-size: 18px;
+    color: #131313;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.information-container ul li{
+    padding-bottom: 8px;
+}
+
+.information-container ul li a{
+    text-decoration: none;
+    color: rgba(19, 19, 19, 0.8);
+}
+
+.information-container ul li a:hover{
+    text-decoration: none;
+    color: #5056bf;
+}
+
+.social-container .fa{
+    font-size: 24px;
+    padding-right: 24px;
+    text-decoration: none;
+}
+
+.fa-linkedin-square {
+    color: #0077B5;
+}
+
+.fa-github-square{
+    color: #24292e;
+}
+
+.fa-folder-open{
+    color: #007369;
+}
+
+.fa-envelope{
+    color: #BB001B;
+}

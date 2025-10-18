@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--Fogli di stile-->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/componenti.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+    <!--Social Icons-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+    <div class="page-container">
+        <!--Header section-->
+        <header class="header">
+            <div class="header-container">
+                <!--Logo-->
+                <div class="logo-container">
+                    <a href="index.html" class="logo-link"><i class="logo-arrow left"></i>
+                    <i class="logo-arrow right"></i></a>
+                </div>
+                <!--Menu di navigazione (solo dextop)-->
+                <div class="nav-container">
+                    <ul class="list-link-out">
+                        <li><a href="cv.html" class="link-out">Scopri il mio CV</a></li>
+                        <li><a href="form.html" class="link-out">Contattami</a></li>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA" class="link-out">Ultimo progetto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!--Hero Section-->
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1 class="hero-fullname">Stefano Gollo</h1>
+                <h3 class="hero-description">Web Developer</h3>
+                <div class="hero-button-container">
+                    <a href="cv.html"><button class="btn btn-cv btn-violet">Discover my CV</button></a>
+                    <a href="form.html"><button class="btn btn-contatti btn-white">Contattami</button></a>
+                </div>
+                <a href="#placeholder-hero_arrow" class="hero-arrow"></a>
+            </div>
+        </section>    
+        
+        <!--Dextop sticky menu-->
+        <section class="sticky-menu">
+            <ul class="list-link-in">
+                <li><a href="#projects-placeholder" class="link-in">I miei progetti</a></li>
+                <li><a href="#bio-placeholder" class="link-in">About Me</a></li>
+                <li><a href="#skills-placeholder" class="link-in">Competenze</a></li>
+            </ul>
+        </section>
+
+        <!--Main section-->
+        <a id="placeholder-hero_arrow"></a>
+        <main class="main-section">
+                <h2 class="main-title" id="projects-placeholder">I miei progetti</h2>
+            <div class="main-container">
+
+                <!--Primo riquadro progetto-->
+                <div class="content-container">
+                    <div class="margin-content">
+                        <p class="project-icon" style="font-size:50px">&#127757;</p>
+                        <h4 class="greenearth-title">Green<mark class="evidenziato">Earth</mark></h4>
+                        <p>Landing page per GreenEarth, un’azienda fittizia impegnata in progetti di riforestazione e pulizia degli oceani.</p>
+                        <a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA" class="project-link">Scopri il progetto...</a>
+                    </div>
+                </div>
+
+                <!--Secondo riquadro progetto-->
+                 <div class="content-container">
+                    <div class="margin-content">
+                        <p style='font-size:50px;' class="project-icon">&#128248;</p>
+                        <h4 class="portfolio-title">Portfolio</h4>
+                        <p>Porfolio di un fotografo per mostrare gli scatti realizzati attraverso il vetro e con i neon.</p>
+                        <a href="" class="project-link">Scopri il progetto...</a>
+                    </div>
+                </div>
+
+                <!--Terzo riquadro progetto-->
+                 <div class="content-container">
+                    <div class="margin-content">
+                        <p class="project-icon" style="font-size:50px">&#127757;</p>
+                        <h4 class="placeholder-title">Placeholder</h4>
+                        <p>Caricherò presto un nuovo progetto realizzato interamente in Javascrip per mostrare le competenze apprese</p>
+                        <a href="" class="project-link">Scopri il progetto...</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Placeholder per link interni (menu-sticky)-->
+        <a id="bio-placeholder"></a>
+        <a href="" id="skills-placeholder"></a>
+
+        <!--Conteiner di due sezione flex solo modalità dextop-->
+        <div class="dextop-version">
+
+            <!--Bio Section-->
+            <section class="bio-section" >
+                <div class="bio-container">
+                    <div class="bio-foto"></div>
+                    <h6>CHI SONO?</h6>
+                    <p class="bio-paragraph">Sono da sempre appassionato di tecnologia e negli ultimi hanni mi sono interessato 
+                allo <strong>sviluppo web</strong>. Ho deciso di iniziare un <strong>master in Start2Impact</strong> per approfondire tutti i linguaggi del web. 
+                Sono molto soddisfatto dei risultati che sto ottenendo, ma il percorso è ancora lungo... <br><br> Inoltre, studio filosofia all'Università Statale di Milano con la volontà di sviluppare un pensiero critico accurato e approfondire la mia passione per la filosofia antica. </p> 
+                </div>
+            </section>  
+
+            <!--Skill Section-->
+            <section class="skills-section">
+                <h2 class="skills-title">Competenze</h2>
+                <!--Finto led-->
+                <div class="led-container">
+                    <span class="shadow-led"><span class="point-led"></span></span>
+                    <span class="text-led">Master in corso...</span>
+                </div>
+                
+                <!--Linea dei linguaggi appresi e da imparare-->
+                <div class="skills-container">
+                    <div class="line-skills">
+                        <div class="line-container">
+                            <div class="mini-interno"></div>
+                            <div class="mini-interno border-red"></div>
+                        </div>
+                        <div class="point skill-appresa"></div>
+                        
+
+                        <div class="line-container">
+                            <div class="line-section"></div>
+                            <div class="line-section border-red"></div>
+                        </div>
+                        <div class="point skill-appresa"></div>
+
+                        <div class="line-container">
+                            <div class="line-section"></div>
+                            <div class="line-section border-grey"></div>
+                        </div>
+                        <div class="point future-skill"></div>
+
+                        <div class="line-container">
+                            <div class="line-section"></div>
+                            <div class="line-section border-grey"></div>
+                        </div>
+                        <div class="point future-skill"></div>
+
+                        <div class="line-container">
+                            <div class="line-section"></div>
+                            <div class="line-section border-grey"></div>
+                        </div>
+                        <div class="point future-skill"></div>
+
+                        <div class="line-container">
+                            <div class="line-section"></div>
+                            <div class="line-section border-grey"></div>
+                        </div>
+                    </div>
+
+                    <div class="text-column">
+                        <h6 class="appresa">HTML5</h6>
+                        <h6 class="appresa">CSS3</h6>
+                        <h6>Javascript</h6>
+                        <h6>TypeScript</h6>
+                        <h6>React</h6>
+                        <h6>PHP and MySQL</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+         <!--Footer-->
+        <footer class="footer">
+            <hr class="footer-hr">
+            <div class="footer-container">
+                <div class="link-in-container">
+                    <h6>Link interni</h6>
+                    <ul>
+                        <li><a href="#projects-placeholder">I miei progetti</a></li>
+                        <li><a href="#bio-placeholder">About me</a></li>
+                        <li><a href="#skills-placeholder">Le mie competenze</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-out-container">
+                    <h6>Link esterni</h6>
+                    <ul>
+                        <li><a href="cv.html">Curriculum Vitae</a></li>
+                        <li><a href="form.html">Contatto diretto</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-projects-footer">
+                    <h6>Porfolio progetti</h6>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA">GreenEarth - Landingpag</a>e</li>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA">Roy Riddle - Portfolio</a></li>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA">Placeholder</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-container">
+                    <h6>Social e contatti</h6>
+                    <a href="https://github.com/Git-Ste" class="fa fa-github-square"></a>
+                    <a href="https://www.linkedin.com/in/stefano-gollo" class="fa fa-linkedin-square"></a>
+                    <a href="https://account.start2impact.it/profile/stefano-gollo" class="fa fa-folder-open"></a>
+                    <a href="form.html" class="fa fa-envelope"></a>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>

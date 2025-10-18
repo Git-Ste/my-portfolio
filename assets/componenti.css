@@ -1,0 +1,71 @@
+body{
+    color: #131313;
+    font-family: Roboto,sans-serif;
+}
+
+/*Componenti Generali*/
+h1{
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 56px;
+}
+
+h2{
+    font-size: 40px; /*web 52px*/
+    font-weight: 600;
+    color: #5056BF;
+}
+
+h3{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 32px;
+}
+
+h6{
+    font-size: 20px;
+    color: #5056BF;
+}
+
+.btn{
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.btn-violet{
+    background-color: #5056BF;
+    border: none;
+    color: #F2F2F2;
+}
+
+.btn-violet:hover{
+    background-color: #3b3f8e;
+    cursor: pointer;
+}
+
+.btn-white{
+    background-color: #F2F2F2;
+    border: 2.5px solid #5056BF;
+    color: #3b3f8e;
+    font-weight: 600;
+    
+}
+
+.btn-white:hover{
+    background-color: #e3e2e2;
+    cursor: pointer;
+
+}
+
+.back-link{
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 12px;
+    line-height: 24px;
+    color: #3b3f8e;
+    text-align: center;
+}
