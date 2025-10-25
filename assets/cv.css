@@ -638,6 +638,7 @@ body{
     padding: 5px;
     font-size:18px;
     font-weight: 500;
+    z-index: 900;
 }
 
 .puzzle-piece .softskill:hover{
@@ -868,6 +869,7 @@ body{
         margin-bottom: 28px;
     }
 }
+
 
 
 
