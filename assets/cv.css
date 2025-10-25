@@ -1,0 +1,712 @@
+body{
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    border: 0px;
+    margin: 0px;
+}
+
+.page-container{
+    width: 80%;
+    margin: auto;
+}
+
+/*Incluso solo nella versione desktop*/
+.desktop-version{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 820px){
+    .desktop-version{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 64px;
+}
+}
+
+/*Hero Section*/
+.hero-section{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 80px;
+}
+
+.hero-titles h1,h2{
+    margin: 0px;
+}
+
+.hero-cards{
+    display: flex;
+    justify-content: left;
+    margin-top: 24px;
+}
+
+.age-card{
+    width: 60px;
+    background-color: #5056BF;
+    border-radius: 8px;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    margin-right: 12px;
+}
+
+.age-text{
+    color: #cbcaca;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.age{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.place-card{
+    width: 120px;
+    background-color: #5056BF;
+    border-radius: 8px;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+}
+
+.place-text{
+    color: #cbcaca;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.place{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero-links{
+    display: none;
+}
+
+/*Hero Section Responsive*/
+@media screen and (min-width: 820px){
+    .hero-links{
+        display: block;
+    }
+
+    .hero-links-container{ 
+        background: linear-gradient(0deg,rgba(80, 86, 191, 1) 0%, rgba(41, 43, 94, 1) 100%);
+        border-radius: 12px;
+        display: flex;
+        text-decoration: none;
+}
+
+    .projects-text{
+        padding: 8px;
+        color: #cbcaca;
+        font-size: 14px;
+        font-weight: 300;
+
+    }
+
+    .projects-link{
+        padding: 8px 10px 10px 10px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #f2f2f2;  
+    }
+
+    .master-title{
+        color: #555555;
+        font-size: 16px;
+    }
+
+    .master-progress-container{
+        margin-top: 20px;
+    }
+
+    .master-progress{
+        margin-top: 12px;
+        height: 20px;
+        width: 250px;
+        border: 2px solid #5056BF;
+        border-radius: 12px;
+    }
+
+    .master-progress-done{
+        height: 20px;
+        width: 50px;
+        background-color: rgba(92, 212, 18, 0.7);
+        border-radius: 12px;
+    }
+}
+
+
+/*Bio Section*/
+
+.bio-container{
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bio-title{
+    color: #5056BF;
+    margin: 0px;
+}
+
+.bio-para{
+    font-size: 18px;
+    color: #373737;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 820px){
+    .bio-container{
+    width: 45%;
+    }
+}
+
+/*Studies Section*/
+.studies-section{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: #252525;
+    margin-top: 64px;
+}
+
+.study-title{
+    color: #5056BF;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.study-container{
+    display: flex;
+}
+
+.study-point-in{
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.study-point-out{
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    margin-bottom: 12px;
+}
+
+.studies-container .done-out{
+    border: 1px solid #5056BF;
+}
+
+.done-out .done-in{
+    background-color: #5056BF;
+}
+
+.studies-container .in-corso-out{
+    background-color: rgba(92, 212, 18, 0.2);
+}
+
+.in-corso-out .in-corso-in{
+    background-color: rgb(92, 212, 18);
+}
+
+.text-in-corso{
+    color: #555555;
+}
+
+.master-mark{
+    background-color: rgba(92, 212, 18, 0.5);
+}
+
+@media screen and (min-width: 820px){
+    .studies-section{
+    height: 100%;
+    width: 45%;
+    min-width: 300px;
+    font-size: 18px;
+    color: #252525;
+    margin-top: 0px;
+    }
+}
+
+
+
+/*Skill section*/
+.hard-skill-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    
+} 
+
+.skills-title{
+    color: #5056BF;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:32px;
+}
+
+.skill-container{
+    border-radius: 8px;
+    margin-top: 48px;
+    width: 80%;
+    min-width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.skill-description{
+    padding: 20px;
+    font-size: 18px;
+    color: #373737;
+}
+
+.icon-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 50%;
+    transform: translate(-30px, -30px);
+}
+
+.office{
+    background-color: #befba0;
+    border: 2px solid #164e00;
+    background: url('img/office-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.office-border{
+    border: 2px solid #164e00;;
+}
+
+.hyper{
+    background-color: #fba583;
+    border: 2px solid #6c2900;
+    background: url('img/html-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hyper-border{
+    border: 2px solid #6c2900;
+}
+
+.stile{
+    background-color: #aaccfc;
+    border: 2px solid #012f4f;
+    background: url('img/css-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stile-border{
+    border: 2px solid #012f4f;
+}
+
+
+.linguaggi{
+    background-color: #f7abfb;
+    border: 2px solid #6a006c;
+    background: url('img/javascript-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.linguaggi-border{
+    border: 2px solid #6a006c;
+
+}
+
+@media screen and (min-width: 820px){
+    .hard-skill-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-bottom: 80px;
+    } 
+
+    .skill-container{
+        border-radius: 8px;
+        margin-top: 0px;
+        width: 20%;
+        min-width: 160px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+}
+
+.skills-title{
+    color: #5056BF;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:64px;
+    }
+}
+
+/*Soft skills section*/
+.softskill-container{
+    width: 100%;
+}
+
+.softskill-container h4{
+    color: #5056BF;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.puzzle-container{
+    width: 100%;
+    display: flex;
+}
+
+.puzzle-first-column{
+    width: 50%;
+    height: 100%;
+}
+
+.puzzle-second-column{
+    width: 50%;
+    height: 100%;
+}
+
+.puzzle-piece{
+    height: 180px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.puzzle-first-column .one{
+    background-color: #f7abfb;
+}
+
+.puzzle-first-column .two{
+    background-color: #aaccfc;
+}
+
+.puzzle-second-column .three{
+    background-color: #befba0;
+}
+
+.puzzle-second-column .four{
+    background-color: #fba583;
+}
+
+
+.puzzle-semicircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.puzzle-piece .first{
+    background-color: #aaccfc;
+    bottom: 0;
+    right: 50%;
+    transform: translate(25px, 25px);
+}
+
+.puzzle-piece .second{
+    background-color: #fba583;
+    bottom: 50%;
+    right: 0;
+    transform: translate(25px, 25px);
+}
+
+.puzzle-piece .third{
+    background-color: #f7abfb;
+    top: 50%;
+    left: 0;
+    transform: translate(-25px, -25px);
+}
+
+.puzzle-piece .fourth{
+    background-color: #befba0;
+    top: 0;
+    right: 50%;
+    transform: translate(25px, -25px);
+}
+
+.puzzle-piece .softskill{
+    margin: 0;
+    color: #252525;
+    text-align: center;
+    padding: 5px;
+    font-size:18px;
+    font-weight: 500;
+}
+
+.puzzle-piece .softskill:hover{
+    margin: 0;
+    color: #252525;
+    text-align: center;
+    padding: 5px;
+    transform: scale(1.2);
+    font-weight: 500;
+    z-index: 1000;
+}
+
+.softskill-description{
+    margin: 0px;
+    font-size: 10px;
+    font-weight: 300;
+    color: #373737;
+    text-align: center;
+    z-index: 900;
+    max-width: 70%;
+}
+
+@media screen and (min-width: 820px){
+    .softskill-container{
+        width: 45%;
+    }
+    .puzzle-container{
+        width: 90%;
+        display: flex;
+    }
+
+    .softskill-description{
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #373737;
+        text-align: center;
+        z-index: 900;
+        max-width: 80%;
+}
+}
+
+/*Hobby container*/
+.hobby-section{
+    width: 100%;
+}
+
+.hobby-title{
+    color: #5056BF;
+    margin-top: 96px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.hobbies-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobby-container{
+    width: 50%;
+    height: 50%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.hobby-icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.ball{
+    background: url('img/ball-icon.png');
+    background-size: cover;
+}
+
+.vintage{
+    background: url('img/vintage.png');
+    background-size: cover;
+}
+
+.volontariato{
+    background: url('img/volontariato.png');
+    background-size: cover;
+}
+
+.filosofia{
+    background: url('img/filosofia-icon.png');
+    background-size: cover;
+}
+
+.hobby, .hobby-description{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.hobby{
+    margin-bottom: 8px;
+}
+
+.hobby-description{
+    font-size: 14px;
+    color: #373737;
+    font-weight: 300;
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (min-width: 820px){
+    .hobby-section{
+        width: 50%;
+}
+    .hobbies-container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hobby-description{
+        font-size: 14px;
+        color: #373737;
+        font-weight: 300;
+        width: 80%;
+        margin: auto;
+}
+    .hobby-title{
+        color: #5056BF;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        text-align: center;
+}
+}
+
+
+/*foooter*/
+/*footer*/
+.footer-container{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.footer h6{
+    font-size: 18px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.footer ul{
+    padding-left: 0px;
+}
+
+.footer ul li{
+    padding-bottom: 8px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: rgba(19, 19, 19, 0.8);
+}
+
+.social-container .fa{
+    font-size: 24px;
+    padding-right: 24px;
+    text-decoration: none;
+}
+
+.fa-linkedin-square {
+    color: #0077B5;
+}
+
+.fa-github-square{
+    color: #24292e;
+}
+
+.fa-folder-open{
+    color: #007369;
+}
+
+.fa-envelope{
+    color: #BB001B;
+}
+
+.footer-container div{
+    margin-top: 24px;
+    }
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+
+.footer-container div{
+    min-width: 220px;
+    } 
+
+.footer-hr{
+    margin-top: 120px;
+}
+
+
+/*footer responsive*/
+@media screen and (min-width: 500px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .footer-container div{
+        min-width: 220px;
+    }
+
+    .footer-hr{
+        margin-top: 48px;
+        margin-bottom: 28px;
+    }
+}
+
