@@ -116,7 +116,7 @@ body{
 .link-out{
     font-size: 18px;
     color: #131313;
-    padding: 12px;
+    padding: 8px;
     text-decoration: none;
     margin-right: 0px;
     display: inline-block;
@@ -868,6 +868,7 @@ body{
         margin-bottom: 28px;
     }
 }
+
 
 
 
