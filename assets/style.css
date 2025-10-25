@@ -230,7 +230,7 @@ body{
     position:absolute;
     bottom: 20px;
     left: 50%;
-    transform: translate(px, px);
+    transform: translate(0px, -5px);
     border: solid #5056bf;
     border-width: 0 3px 3px 0;
     padding: 3px;  
