@@ -4,72 +4,214 @@
     <!--Meta Tag-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <meta name="description" content="Curriculum vitae, informazioni personali e skills di programmazione">
+    <title>Curriculum - Gollo Stafano</title>
+    <meta name="description" content="Curriculm Vitae - programmatore web">
     <link rel="canonical" href="">
 
     <!--OpenGraph-->
-    <meta property="og:title" content="Curriculum Vitae - Gollo Stefano" />
-    <meta property="og:description" content="Curriculum Vitae - infomazioni personali e linguaggi di programmazione appresi" />
+    <meta property="og:title" content="Curriculum Vitae" />
+    <meta property="og:description" content="Curriculum Vitae Programmatore Web, competenze e informazioni personali" />
     <meta property="og:url" content="https://github.com/Git-Ste/cv" />
     <meta property="og:type" content="website" />
 
-    <!--CSS-->
+    <!--Fogli di stile-->
+    <link rel="stylesheet" href="assets/cv.css">
     <link rel="stylesheet" href="assets/componenti.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+    <!--Social Icons-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
+    <div class="page-container">
+        <!--Hero Section-->
+        <section class="hero-section">
+            <div class="hero-titles">
+                <h1>Stefano Gollo</h1>
+                <h2>Web Developer</h2>
+
+                <div class="hero-cards">
+                    <div class="age-card">
+                        <div class="age-text">Età</div>
+                        <div class="age">20</div>
+                    </div>
+                    <div class="place-card">
+                        <div class="place-text">Luogo</div>
+                        <div class="place">Milano</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-links">
+                <a href="https://github.com/Git-Ste" class="hero-links-container">
+                    <div class="projects-text">Scopri i miei progetti su:</div>
+                    <div class="projects-link">GitHub</div>
+                </a>
+
+                <div class="master-progress-container">
+                    <span class="master-title">Progresso del master in Sviluppo Web:</span>
+                    <div class="master-progress">
+                        <div class="master-progress-done"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Main Section-->
+        <main class="main-section">
+            <div class="desktop-version">
+
+                <!--Bio section-->
+                <fieldset class="bio-container">
+                    <legend><h4 class="bio-title">Bio</h4></legend>
+                    <p class="bio-para">Sono da sempre appassionato di tecnologia e negli ultimi hanni mi sono interessato 
+                        allo <strong>sviluppo web</strong>. Ho deciso di iniziare un <strong>master presso Start2Impact</strong> per approfondire tutti i linguaggi del web. 
+                        Sono molto soddisfatto dei risultati che sto ottenendo, ma il percorso è ancora lungo...</p>
+                </fieldset>
+
+                <!--Studies section-->
+                <div class="studies-section">
+                    <h4 class="study-title">Percorso di studi</h4>
+                    <div class="studies-container">
+                        <div class="study-container"><div class="study-point-out done-out"><div class="study-point-in done-in"></div></div><div><em>2019 / 2024 - </em>Liceo Scientifico opzione Applicate</div></div>
+                        <div class="study-container"><div class="study-point-out in-corso-out"><div class="study-point-in in-corso-in"></div></div><div><em class="text-in-corso">In corso..</em> - Laurea Triennale in Filosofia presso UniMi</div></div>
+                        <div class="study-container"><div class="study-point-out in-corso-out"><div class="study-point-in in-corso-in"></div></div><div><em class="text-in-corso">In corso..</em> - <mark class="master-mark">Master in Full Stack Development</mark> in Start2Impact</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Skills Section-->
+            <h4 class="skills-title">Hard Skills</h4>
+            <div class="hard-skill-container">
+                <div class="skill-container office-border">
+                    <div class="icon-container office"></div>
+                    <p class="skill-description">Pacchetto Office - Excel, Word, PowerPoint, etc.</p>
+                </div>
+                <div class="skill-container hyper-border">
+                    <div class="icon-container hyper"></div>
+                    <p class="skill-description"><strong>HTML5</strong></p>
+                </div>
+                <div class="skill-container stile-border">
+                    <p class="skill-description"><strong>CSS3</strong> - con l'integrazione di Sass e framework come Bootstrap</p>
+                    <div class="icon-container stile"></div>
+                </div>
+                <div class="skill-container linguaggi-border">
+                    <div class="icon-container linguaggi"></div>
+                    <p class="skill-description">Programmazione di base nei linguaggi: <strong>C, C++ e Phyton</strong>. Studio di JavaScript in corso..</p>
+                </div>
+            </div>
+            
+
+
+
+            <div class="desktop-version">
+                <!--Puzzle soft sckills-->
+                <div class="softskill-container">
+                    <h4>Soft Skills</h4>
+                    <div class="puzzle-container">
+                        <div class="puzzle-first-column">
+                            <div class="puzzle-piece one"><div class="puzzle-semicircle first"></div><h5 class="softskill">Lavoro di squadra</h5><p class="softskill-description">sono molto collaborativo e cerco sempre di mediare</p></div>
+                            <div class="puzzle-piece two"><div class="puzzle-semicircle second"></div><h5 class="softskill">Empatia</h5><p class="softskill-description">comprendo le esigenze dell'interlocutore</p></div>
+                        </div>
+
+                        <div class="puzzle-second-column">
+                            <div class="puzzle-piece three"><div class="puzzle-semicircle third"></div><h5 class="softskill">Problem <br>Solving</h5><p class="softskill-description">lavoro per step alla risoluzione dei problemi</p></div>
+                            <div class="puzzle-piece four"><div class="puzzle-semicircle fourth"></div><h5 class="softskill">Capacità relazionali</h5><p class="softskill-description">sono socevole e disponibile</p></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hobby-section">
+                    <h4 class="hobby-title">Hobby e interessi</h4>
+                    <div class="hobbies-container">
+                        <div class="hobby-container">
+                            <div class="hobby-icon ball"></div>
+                            <div class="hobby-text">
+                                <h6 class="hobby">Calcio</h6>
+                                <p class="hobby-description">Ho iniziato da pochi mesi a giocare a calcio. Una nuova esperienza!</p>
+                            </div>
+                        </div>
+
+                        <div class="hobby-container">
+                            <div class="hobby-icon vintage"></div>
+                            <div class="hobby-text">
+                                <h6 class="hobby">Vintage</h6>
+                                <p class="hobby-description">Sono un appassionato di Vintage e nel weekend giro i mercatini dell'usato</p>
+                            </div>
+                        </div>
+
+                        <div class="hobby-container">
+                            <div class="hobby-icon volontariato"></div>
+                            <div class="hobby-text">
+                                <h6 class="hobby">Volontariato</h6>
+                                <p class="hobby-description">Sono attivamente impegnato in parrocchia, tra Carits e oratorio</p>
+                            </div>
+                        </div>
+
+                        <div class="hobby-container">
+                            <div class="hobby-icon filosofia"></div>
+                            <div class="hobby-text">
+                                <h6 class="hobby">Filosofia</h6>
+                                <p class="hobby-description">Sono uno studente di filosofia al secondo anno</p>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+
+
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <hr class="footer-hr">
+            <div class="footer-container">
+                <div class="link-in-container">
+                    <h6>Link interni</h6>
+                    <ul>
+                        <li><a href="#projects-placeholder">I miei progetti</a></li>
+                        <li><a href="#bio-placeholder">About me</a></li>
+                        <li><a href="#skills-placeholder">Le mie competenze</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-out-container">
+                    <h6>Link esterni</h6>
+                    <ul>
+                        <li><a href="cv.html">Curriculum Vitae</a></li>
+                        <li><a href="form.html">Contatto diretto</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-projects-footer">
+                    <h6>Porfolio progetti</h6>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA">GreenEarth - Landingpag</a>e</li>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA">Roy Riddle - Portfolio</a></li>
+                        <li><a href="https://www.linkedin.com/posts/stefano-gollo_landing-page-activity-7383884229673263105-y--w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF8q_-gBaWENIP2JPA8mIau0z156F16e8gA">Placeholder</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-container">
+                    <h6>Social e contatti</h6>
+                    <a href="https://github.com/Git-Ste" class="fa fa-github-square"></a>
+                    <a href="https://www.linkedin.com/in/stefano-gollo" class="fa fa-linkedin-square"></a>
+                    <a href="https://account.start2impact.it/profile/stefano-gollo" class="fa fa-folder-open"></a>
+                    <a href="form.html" class="fa fa-envelope"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
     
-    <section>
-        <h1>Stefano Gollo</h1>
-        <h2>Web Developer</h2>
-    </section>
-
-    <main> 
-        <fieldset>
-            <legend><h4>Bio</h4></legend>
-            <p>Sono da sempre appassionato di tecnologia e negli ultimi hanni mi sono interessato 
-                allo <strong>sviluppo web</strong>. Ho deciso di iniziare un <strong>master presso Start2Impact</strong> per approfondire tutti i linguaggi del web. 
-                Sono molto soddisfatto dei risultati che sto ottenendo, ma il percorso è ancora lungo...</p>
-        </fieldset>
-
-        <h4>Percorso di studi</h4>
-        <ul>
-            <li><em>2019 / 2024 - </em>Liceo Scientifico opzione Applicate</li>
-            <li><em>2024 / in corso - </em>Laurea Triennale in Filosofia presso UniMi</li>
-            <li><em>2025 / in corso - </em><mark>Master in Full Stack Development</mark> in Start2Impact</li>
-        </ul>
-
-        <h4>Hard Skills</h4>
-        <ul>
-            <li>Pacchetto Office - Excels, World, PowerPoint, etc.</li>
-            <li><strong>HTML5</strong></li>
-            <li><strong>CSS3</strong> - con l'integrazione di Sass e framework come Bootstrap</li>
-            <li>Programmazione di base nei linguaggi: <strong>C, C++ e Phyton</strong></li>
-        </ul> 
-
-        <h4>Soft Skills</h4>
-        <ul>
-            <li>Lavoro di squadra: sono molto collaborativo e cerco sempre di trovare una mediazione.</li>
-            <li>Problem Solving: scompongo un grande problema in problimi minori risolvibili.</li>
-            <li>Empatia e capacità relazionali</li>
-        </ul> 
-
-        <h4>Hobby e interessi</h4>
-        <ul>
-            <li>Ho iniziato da pochi mesi a giocare a calcio. Una nuova avventura!</li>
-            <li>Sono un appassionato di Vintage e nel weekend giro i mercatini dell'usato</li>
-            <li>Sono attivamente impegnato in parrocchia tra Carits e oratorio</li>
-        </ul> 
-    </main>
-
-    <footer>
-        <br>
-            <h4>Link utili</h4>
-            <a href="index.html">Torna alla homepage del sito</a><br>
-            <a href="form.html">Contattami attraverso il form dedicato</a>
-    </footer>
-    <br>
-    <i>Stefano Gollo</i>
-
 </body>
 </html>
